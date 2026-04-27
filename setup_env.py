@@ -15,7 +15,7 @@ def init_units():
         with open(target_path, 'w', encoding='utf-8') as f:
             json.dump(response.json(), f, indent=4)
             
-        si.environment('my_units', top_level=True , autoscale=False)
+        si.environment('my_units', top_level=True)
         print("✅ סביבת היחידות נמשכה מ-GitHub והופעלה בהצלחה!")
         
     except Exception as e:
